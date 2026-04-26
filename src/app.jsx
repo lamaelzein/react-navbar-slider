@@ -14,7 +14,7 @@ function App() {
 
       {}
       <div style={{ width: "300px", margin: "50px auto" }}>
-        <h3>Slider Example</h3>
+        <h3>Material UI Slider</h3>
         <Slider defaultValue={50} valueLabelDisplay="auto" />
       </div>
     </div>
