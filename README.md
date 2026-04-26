@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# React UI Assignment — Bootstrap Navbar & MUI Slider
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application built as a university assignment that combines **Bootstrap** for navigation and **Material UI** for interactive components.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📋 Assignment Requirements
 
-## React Compiler
+- ✅ New Git project with at least 4 commits (excluding the initial commit)
+- ✅ React application
+- ✅ Bootstrap installed and used for the Navbar
+- ✅ Material UI installed and used with a Slider component
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Clone the repository and install dependencies:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone <your-repo-link>
+cd <your-project-folder>
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Dependencies used
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Bootstrap
+npm install bootstrap
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Material UI
+npm install @mui/material @emotion/react @emotion/styled
 ```
+
+---
+
+## ▶️ Running the App
+
+```bash
+npm start
+```
+
+The app will open at `http://localhost:3000`.
+
+---
+
+## 🔀 Git Commit History
+
+This project includes at least **4 commits** after the initial commit, covering:
+
+1. `Initial commit` — project setup with Create React App
+2. `Install and configure Bootstrap, add Navbar component``
+3. `Add MUI Slider component
+4. `Final styling and cleanup`
+
+---
+
+
+## 👤 Author
+
+**Your Name**  
+Course: *Web*  
+Submitted to: Dr. *Ahmad*  
