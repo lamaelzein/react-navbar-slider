@@ -1,13 +1,16 @@
+import { Button as MuiButton } from '@mui/material';
 import type { ReactNode } from "react";
 
 interface Props {
     children: ReactNode;
-    color?: string;
+    color?: 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning';
     onClick?: () => void;
 }
 const Button = ({ children, onClick, color = "primary" }: Props) => {
     return (
-        <button className={`btn btn-${color}`} onClick={onClick}>{children}</button>
+        <MuiButton variant="contained" color={color} onClick={onClick}>
+            {children}
+        </MuiButton>
     );
 };
 export default Button;
