@@ -1,5 +1,5 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+ 
 import Slider from '@mui/material/Slider';
 
 function App() {
